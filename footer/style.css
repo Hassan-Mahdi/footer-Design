@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { font-family: 'Open Sans', sans-serif;}
+/* p { font-family: 'Roboto', sans-serif;} */
+p { font-family: 'Lato', sans-serif;}
+
+.icon-item i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    margin: 5px;    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* icon hover effect and animation Start*/
+
+.icon-item i:hover { 
+ background-color: #131720;  
+ transition: 800ms; 
+}
+
+.icon-item i:hover {    
+    animation: rotation 2s infinite linear;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  /* icon hover effect and animation End*/
+
+.addres p {       
+    display: list-item;
+    margin: 15px;
+    padding: 10px;
+}
+
+.addrestwo i {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+}
+
+h3 {
+    font-weight: bold;
+    text-transform: uppercase;    
+    margin: 20px;  
+    padding: 10px;  
+}
+
+.copyright {
+    background-color: #131720;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: lowercase;
+    letter-spacing: 1px;    
+    font-size: 12px;
+}
+
+/* for small size screen size // address and number*/
+
+@media (max-width: 600px) {    
+    .addres p {
+        margin: 5px;
+        text-align: center;
+        list-style-type: none;        
+    }   
+}
+
+@media (max-width: 600px) {    
+    .addrestwo p {
+        margin: 10px;               
+        text-align: center;
+    }  
+}
+
